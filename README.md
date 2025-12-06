@@ -45,7 +45,8 @@ Aunque pareciera que ambas variables están muy correlacionadas y que podrían t
 
 El uso de **walk-forward** evita “ver el futuro” y hace la evaluación más realista que un simple train/test aleatorio.
 - El **OOS de AUC** junta todas las predicciones de validación en una sola serie continua y mide AUC/KS ahí.
-- Eso suele ser más riguroso porque expone cómo se ordenan eventos y no‑eventos entre ventanas distintas
+- Eso suele ser más riguroso porque expone cómo se ordenan eventos y no‑eventos entre ventanas distintas.
+- Aunque el VAL OSS parece bajo, sucede porque el modelo detecta falsos positivos en el periodo de 2022, donde hubo una recesión técnica, la cual no fue marcada como recesión por la NBER.
 <p align="center">
   <img src="img/ROC Modelo 12 meses.png" width="400">
   <img src="img/ROC Modelo 6 meses.png" width="400">
